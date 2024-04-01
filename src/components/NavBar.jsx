@@ -17,14 +17,17 @@ export default function NavBar() {
                             <img src="/images/logo.svg" alt="" className="h-10" />
                         </Link>
                         <div className="w-[426.65px] h-6 flex justify-between text-lg font-bold text-theme-medium-grey">
-                            <Link to="/portfolio">
+                            <Link to="/portfolio" className={`relative h-full ${location === "/portfolio" ? 'text-theme-very-dark-blue' : 'text-theme-medium-grey hover:text-theme-very-dark-blue'}`}>
                                 Portfolio
+                                <div className={`absolute -bottom-4 left-[50%] -translate-x-[50%] w-6 h-1 ${location === "/portfolio" ? 'inline-block' : 'hidden' } bg-theme-very-dark-blue`}></div>
                             </Link>
-                            <Link to="/about">
+                            <Link to="/about" className={`relative h-full ${location === "/about" ? 'text-theme-very-dark-blue' : 'text-theme-medium-grey hover:text-theme-very-dark-blue'}`}>
                                 About Us
+                                <div className={`absolute -bottom-4 left-[50%] -translate-x-[50%] w-6 h-1 ${location === "/about" ? 'inline-block' : 'hidden' } bg-theme-very-dark-blue`}></div>
                             </Link>
-                            <Link to="/contact">
+                            <Link to="/contact" className={`relative h-full ${location === "/contact" ? 'text-theme-very-dark-blue' : 'text-theme-medium-grey hover:text-theme-very-dark-blue'}`}>
                                 Contact
+                                <div className={`absolute -bottom-4 left-[50%] -translate-x-[50%] w-6 h-1 ${location === "/contact" ? 'inline-block' : 'hidden' } bg-theme-very-dark-blue`}></div>
                             </Link>
                         </div>
                     </nav>

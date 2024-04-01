@@ -1,0 +1,29 @@
+[
+    {
+        "name" : "Project Del Sol",
+        "date" : "January 2016",
+        "images": {
+            "desktop_preview" : "/images/portfolio/desktop/image-del-sol.jpg",
+            "tablet_preview" : "/images/portfolio/tablet/image-del-sol.jpg",
+            "mobile_preview" : "/images/portfolio/mobile/image-del-sol.jpg"
+        }
+    },
+    {
+        "name" : "228B Tower",
+        "date" : "April 2015",
+        "images": {
+            "desktop_preview" : "/images/portfolio/desktop/image-228b.jpg",
+            "tablet_preview" : "/images/portfolio/tablet/image-228b.jpg",
+            "mobile_preview" : "/images/portfolio/mobile/image-228b.jpg"
+        }
+    },
+    {
+        "name" : "Le Prototype",
+        "date" : "October 2015",
+        "images": {
+            "desktop_preview" : "/images/portfolio/desktop/image-prototype.jpg",
+            "tablet_preview" : "/images/portfolio/tablet/image-prototype.jpg",
+            "mobile_preview" : "/images/portfolio/mobile/image-prototype.jpg"
+        }
+    }
+]

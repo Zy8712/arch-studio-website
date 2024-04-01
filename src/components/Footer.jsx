@@ -26,7 +26,7 @@ export default function Footer() {
 
                     </div>
 
-                    <button className="absolute right-0 top-[50%] -translate-y-[50%] w-[252px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px]">
+                    <button className="absolute right-0 top-[50%] -translate-y-[50%] w-[252px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
                         See Our Portfolio
                         <i className="las la-arrow-right ml-4 text-3xl"></i>
                     </button>
