@@ -17,6 +17,10 @@ export default {
       fontFamily: {
         'theme-league-spartan': ['League Spartan', 'sans-serif'],
       },
+      screens: {
+        'custom-lg' : '1110px',
+        'custom-md' : '900px',
+      },
     },
   },
   plugins: [],
