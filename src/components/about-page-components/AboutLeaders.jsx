@@ -3,11 +3,11 @@ import about_leaders_data from "./about-leaders.json";
 export default function AboutLeaders() {
     return (
         <>
-            <section className="w-full h-[861px] flex justify-between border-black border-2 border-solid">
-                <div className="w-full h-full">
+            <section className="w-full h-[1786px] custom-md:h-[950px] custom-lg:h-[861px] flex flex-col custom-lg:flex-row justify-between">
+                <div className="w-auto h-auto custom-lg:h-full text-center custom-md:text-left">
                     <h2 className="font-bold text-7xl text-theme-very-dark-blue">The <br />Leaders</h2>
                 </div>
-                <div className="w-[730px] min-w-[730px] h-full flex flex-wrap justify-between border-black border-solid border-2">
+                <div className="w-full custom-lg:w-[730px] h-[1607px] custom-md:h-[783px] custom-lg:h-full flex flex-col custom-md:flex-row flex-nowrap custom-md:flex-wrap justify-around custom-lg:justify-between items-center custom-md:items-start">
                     {about_leaders_data.map((leader, index) => (
                         <div className="w-[350px] h-[399px] flex flex-col">
                             <img src={leader.profile_image} className="w-full" />

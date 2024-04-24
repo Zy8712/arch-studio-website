@@ -3,10 +3,10 @@ import { Link, Route, useLocation } from 'wouter';
 export default function AboutPageRedirect() {
     return (
         <>
-            <section className="w-full h-[560px] my-[200px] bg-[url('/images/home/desktop/image-small-team.jpg')] border-black border-2 border-solid">
-                <div className="w-full h-full pl-[190px] flex items-center bg-black bg-opacity-50">
+            <section className="w-full h-[560px] my-[200px] bg-[url('/images/home/mobile/image-small-team.jpg')] sm:bg-[url('/images/home/tablet/image-small-team.jpg')] custom-md:bg-[url('/images/home/desktop/image-small-team.jpg')] bg-cover custom-md:bg-cover bg-no-repeat">
+                <div className="w-full h-full pl-8 sm:pl-24 custom-md:pl-[190px] flex items-center bg-black bg-opacity-50">
                     <div className="">
-                        <h2 className="text-white font-bold text-[72px] leading-[64px]">
+                        <h2 className="text-white font-bold text-5xl sm:text-[72px] leading-[52px] sm:leading-[64px]">
                             Small team,<br />
                             big ideas
                         </h2>

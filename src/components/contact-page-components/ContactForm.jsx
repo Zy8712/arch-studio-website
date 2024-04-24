@@ -1,11 +1,11 @@
 export default function ContactForm() {
     return (
         <>
-            <section className="mt-40 w-full h-[352px] flex justify-between border-black border-2 border-solid">
-                <h2 className="font-bold text-7xl text-theme-very-dark-blue">
+            <section className="mt-40 w-full h-[492px] custom-lg:h-[352px] flex flex-col custom-lg:flex-row justify-between">
+                <h2 className="font-bold text-6xl sm:text-7xl text-theme-very-dark-blue">
                     Connect <br />with Us
                 </h2>
-                <div className="relative w-[730px] h-full">
+                <div className="relative w-full custom-lg:w-[730px] h-[346px] custom-lg:h-full">
                     <div className="w-full h-[262px] flex flex-col justify-between font-bold text-lg text-theme-light-grey">
                         <input type="name" placeholder="Name" className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue" />
                         <input type="email" placeholder="Email" className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue" />

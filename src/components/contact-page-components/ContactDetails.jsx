@@ -1,14 +1,14 @@
 export default function ContactDetails() {
     return (
         <>
-            <section className="my-[200px] w-full h-[207px] flex">
-                <div className="w-1/3 h-full">
-                    <h2 className="font-bold text-7xl text-theme-very-dark-blue">
+            <section className="my-[200px] w-full h-[505px] sm:h-[445px] custom-lg:h-[207px] flex flex-col custom-lg:flex-row justify-between custom-lg:justify-normal px-5 sm:px-0">
+                <div className="w-1/3 custom-lg:h-full">
+                    <h2 className="font-bold text-5xl sm:text-7xl text-theme-very-dark-blue">
                         Contact Details
                     </h2>
                 </div>
 
-                <div className="w-1/3 h-full flex flex-col justify-between">
+                <div className="w-full custom-lg:w-1/3 h-[169px] custom-lg:h-full flex flex-col sm:flex-row custom-lg:flex-col justify-between">
                     <div className="h-[124px] flex flex-col justify-between">
                         <p className="font-bold text-lg text-theme-dark-grey">Main Office</p>
                         <div className="w-full flex flex-col font-medium text-lg text-theme-dark-grey">
@@ -24,7 +24,7 @@ export default function ContactDetails() {
                     </div>
                 </div>
 
-                <div className="w-1/3 h-full flex flex-col justify-between">
+                <div className="w-full custom-lg:w-1/3 h-[169px]  custom-lg:h-full flex flex-col sm:flex-row custom-lg:flex-col justify-between">
                     <div className="h-[124px] flex flex-col justify-between">
                         <p className="font-bold text-lg text-theme-dark-grey">Main Office</p>
                         <div className="w-full flex flex-col font-medium text-lg text-theme-dark-grey">
