@@ -1,4 +1,37 @@
+import { useState } from 'react';
+
 export default function ContactForm() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Check if name and message are empty
+        if (!name.trim() || !message.trim()) {
+            setError('Please enter your name and message.');
+            return;
+        }
+
+        // Check if email is valid
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+            setError('Please enter a valid email address.');
+            return;
+        }
+
+        // If all fields are valid, you can proceed with form submission
+        // For demonstration purposes, let's just log the data
+        console.log({ name, email, message });
+
+        // Clearing error and input fields after successful submission
+        setError('');
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
+
     return (
         <>
             <section className="mt-40 w-full h-[492px] custom-lg:h-[352px] flex flex-col custom-lg:flex-row justify-between">
@@ -6,17 +39,39 @@ export default function ContactForm() {
                     Connect <br />with Us
                 </h2>
                 <div className="relative w-full custom-lg:w-[730px] h-[346px] custom-lg:h-full">
-                    <div className="w-full h-[262px] flex flex-col justify-between font-bold text-lg text-theme-light-grey">
-                        <input type="name" placeholder="Name" className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue" />
-                        <input type="email" placeholder="Email" className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue" />
-                        <textarea className="w-full h-[92px] ps-4 border-b-[1px] border-b-theme-very-dark-blue" rows={4} placeholder="Message">
-                        </textarea>
-                    </div>
-                    <button className="absolute bottom-0 right-0 w-20 h-20 grid place-items-center bg-theme-very-dark-blue">
-                        <i className="las la-arrow-right text-3xl text-white"></i>
-                    </button>
+                    <form onSubmit={handleSubmit}>
+                        <div className="w-full h-[262px] flex flex-col justify-between font-bold text-lg text-theme-light-grey">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <textarea
+                                className="w-full h-[92px] ps-4 border-b-[1px] border-b-theme-very-dark-blue"
+                                rows={4}
+                                placeholder="Message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            ></textarea>
+                        </div>
+                        {error && <p className="text-red-500">{error}</p>}
+                        <button
+                            type="submit"
+                            className="absolute bottom-0 right-0 w-20 h-20 grid place-items-center bg-theme-very-dark-blue"
+                        >
+                            <i className="las la-arrow-right text-3xl text-white"></i>
+                        </button>
+                    </form>
                 </div>
-
             </section>
         </>
     );

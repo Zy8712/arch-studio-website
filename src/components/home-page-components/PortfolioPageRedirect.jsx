@@ -1,3 +1,5 @@
+import { Link } from 'wouter';
+
 export default function PortfolioPageRedirect() {
     const imageSet = ["image-del-sol.jpg", "image-228b.jpg", "image-prototype.jpg"];
     const imagePathDesktop = "/images/portfolio/desktop/";
@@ -9,10 +11,10 @@ export default function PortfolioPageRedirect() {
             <section className="w-full h-[955px] custom-md:h-[696px] flex flex-col justify-between">
                 <div className="w-full flex justify-between">
                     <h2 className="font-bold text-[72px] leading-[64px]">Featured</h2>
-                    <button className="w-[169px] h-[72px] hidden custom-md:flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
+                    <Link to="/portfolio"  className="w-[169px] h-[72px] hidden custom-md:flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
                         See All
                         <i className="las la-arrow-right ml-4 text-3xl"></i>
-                    </button>
+                    </Link>
                 </div>
 
                 <div className="w-full h-[840px] custom-md:h-[560px] flex flex-col custom-md:flex-row justify-between">
@@ -30,10 +32,10 @@ export default function PortfolioPageRedirect() {
                             </div>
                         </div>
                     ))}
-                    <button className="w-full h-[72px] flex custom-md:hidden justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] rounded-lg hover:bg-theme-dark-grey">
+                    <Link to="/portfolio"  className="w-full h-[72px] flex custom-md:hidden justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] rounded-lg hover:bg-theme-dark-grey">
                         See All
                         <i className="las la-arrow-right ml-4 text-3xl"></i>
-                    </button>
+                    </Link>
                 </div>
             </section>
         </>

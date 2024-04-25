@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'wouter';
 import heroImgData from "./home-hero.json";
 
 export default function HomeHero() {
@@ -16,10 +17,10 @@ export default function HomeHero() {
                 <div className="absolute top-[50%] -translate-y-[50%] left-7 custom-lg:left-40 text-white">
                     <p className="w-[350px] sm:w-[540px] font-bold text-7xl sm:text-8xl leading-[80px]">{heroImgData[heroImageNum - 1].name}</p>
                     <p className="w-[350px] sm:w-[445px]">{heroImgData[heroImageNum - 1].description}</p>
-                    <button className="mt-10 w-[252px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
+                    <Link to="/portfolio" className="mt-10 w-[252px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
                         See Our Portfolio
                         <i className="las la-arrow-right ml-4 text-3xl"></i>
-                    </button>
+                    </Link>
                 </div>
 
                 <div className="absolute bottom-0 -left-20 w-80 h-20 hidden custom-lg:flex">

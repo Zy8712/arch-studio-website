@@ -11,11 +11,9 @@ export default function AboutPageRedirect() {
                             big ideas
                         </h2>
 
-                        <Link to="/about">
-                            <button className="mt-[27px] w-[187px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
-                                About Us
-                                <i className="las la-arrow-right ml-4 text-3xl"></i>
-                            </button>
+                        <Link to="/about" className="mt-[27px] w-[187px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
+                            About Us
+                            <i className="las la-arrow-right ml-4 text-3xl"></i>
                         </Link>
                     </div>
 
