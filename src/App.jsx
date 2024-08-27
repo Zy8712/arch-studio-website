@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { Router, Route } from 'wouter';
 
 import NavBar from './components/NavBar';
@@ -10,6 +11,29 @@ import Footer from './components/Footer';
 import './App.css'
 
 export default function App() {
+
+  const [accessGranted, setAccessGranted] = useState(false);
+
+  useEffect(() => {
+    fetch('/api/verify')
+      .then(response => {
+        if (response.status === 200) {
+          setAccessGranted(true);
+        } else {
+          setAccessGranted(false);
+        }
+      })
+      .catch(() => setAccessGranted(false));
+  }, []);
+
+  if (!accessGranted) {
+    return (
+      <div>
+        <h1>Access Denied</h1>
+        <p>You do not have permission to view this page.</p>
+      </div>
+    );
+  }
 
   return (
     <>
