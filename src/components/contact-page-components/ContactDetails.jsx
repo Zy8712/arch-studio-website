@@ -1,7 +1,7 @@
 export default function ContactDetails() {
     return (
         <>
-            <section className="my-[200px] w-full h-[505px] sm:h-[445px] custom-lg:h-[207px] flex flex-col custom-lg:flex-row justify-between custom-lg:justify-normal px-5 sm:px-0">
+            <section className="my-[200px] w-full h-[505px] sm:h-[445px] custom-lg:h-[207px] flex flex-col custom-lg:flex-row justify-between custom-lg:justify-normal px-5 sm:px-0"> {/** blblbl */}
                 <div className="w-1/3 custom-lg:h-full">
                     <h2 className="font-bold text-5xl sm:text-7xl text-theme-very-dark-blue">
                         Contact Details

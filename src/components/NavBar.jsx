@@ -60,13 +60,6 @@ export default function NavBar() {
 
                         </div>
                     </nav>
-
-                    {/** to be fixed later massive issues with constant shifting and inability to lock down item */}
-                    {/** <div className="absolute top-2 -left-56 rotate-90 h-6 flex justify-between items-center">
-                        <div className="w-[168px] h-[1px] mr-6 bg-theme-light-grey"></div>
-                        <span className="text-lg font-medium text-theme-light-grey uppercase tracking-[18px] leading-6">{currentPage}</span>
-                        </div>
-                    */}
                 </div>
             </div>
         </>

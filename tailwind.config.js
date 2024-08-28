@@ -15,7 +15,8 @@ export default {
         'theme-red': 'rgb(223, 86, 86)',
       },
       fontFamily: {
-        'theme-league-spartan': ['League Spartan', 'sans-serif'],
+        /** Font Family Placement Here */
+        /** View On Full Site: https://arch-studio-website-green.vercel.app/ */
       },
       screens: {
         'custom-lg' : '1110px',

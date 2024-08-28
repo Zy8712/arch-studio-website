@@ -14,7 +14,7 @@ export default function HomeHero() {
                 <img src={heroImgData[heroImageNum - 1].hero_images.mobile_preview} className="w-full h-full inline-block sm:hidden" />
                 <div className="absolute top-0 w-full h-full bg-black bg-opacity-35"></div>
 
-                <div className="absolute top-[50%] -translate-y-[50%] left-7 custom-lg:left-40 text-white">
+                <div className="absolute top-[50%] -translate-y-[50%] left-7 custom-lg:left-40 text-white"> {/** BL */}
                     <p className="w-[350px] sm:w-[540px] font-bold text-7xl sm:text-8xl leading-[80px]">{heroImgData[heroImageNum - 1].name}</p>
                     <p className="w-[350px] sm:w-[445px]">{heroImgData[heroImageNum - 1].description}</p>
                     <Link to="/portfolio" className="mt-10 w-[252px] h-[72px] flex justify-center items-center bg-theme-very-dark-blue text-theme-very-light-grey font-bold text-lg leading-[25px] hover:bg-theme-dark-grey">
@@ -25,7 +25,7 @@ export default function HomeHero() {
 
                 <div className="absolute bottom-0 -left-20 w-80 h-20 hidden custom-lg:flex">
                     <button onClick={() => setHeroImageNum(1)}
-                        className={`w-20 h-20 font-bold ${heroImageNum == 1 ? 'bg-black text-white' : 'bg-white hover:bg-theme-very-light-grey text-theme-medium-grey'}`}>
+                        className={`w-20 h-20 font-bold ${heroImageNum == 1 ? 'bg-black text-white' : 'bg-white hover:bg-theme-very-light-grey text-theme-medium-grey'}`}> {/** Code by Bryan Li */}
                         01
                     </button>
                     <button onClick={() => setHeroImageNum(2)}

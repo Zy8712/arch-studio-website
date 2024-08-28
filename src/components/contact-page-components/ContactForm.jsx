@@ -41,27 +41,10 @@ export default function ContactForm() {
                 <div className="relative w-full custom-lg:w-[730px] h-[346px] custom-lg:h-full">
                     <form onSubmit={handleSubmit}>
                         <div className="w-full h-[262px] flex flex-col justify-between font-bold text-lg text-theme-light-grey">
-                            <input
-                                type="text"
-                                placeholder="Name"
-                                className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                className="w-full h-11 ps-4 border-b-[1px] border-b-theme-very-dark-blue"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                            <textarea
-                                className="w-full h-[92px] ps-4 border-b-[1px] border-b-theme-very-dark-blue"
-                                rows={4}
-                                placeholder="Message"
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                            ></textarea>
+                            {/** Name text box */}
+                            {/** Email text box */}
+                            {/** Message text box */}
+                            {/** View Functioning Boxes on Full Site: https://arch-studio-website-green.vercel.app/ */}
                         </div>
                         {error && <p className="text-red-500">{error}</p>}
                         <button

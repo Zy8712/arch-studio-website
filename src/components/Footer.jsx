@@ -1,11 +1,12 @@
 import { Link, useLocation } from 'wouter';
+import C from './home-page-components/HomeShared';
 
 export default function Footer() {
     const [location] = useLocation();
 
     return (
         <>
-            <footer className="w-full h-[443px] custom-md:h-[200px] flex justify-center">
+            <footer className="relative w-full h-[443px] custom-md:h-[200px] flex justify-center">
                 <div className="relative w-full max-w-[1110px] h-full flex flex-col custom-md:flex-row justify-end custom-md:justify-normal">
 
                     <div className="relative w-full custom-md:w-[984px] h-[383px] custom-md:h-full bg-theme-very-light-grey flex flex-col custom-md:flex-row items-center">
@@ -35,6 +36,8 @@ export default function Footer() {
                     </Link>
 
                 </div>
+
+                <C />
             </footer>
         </>
     );

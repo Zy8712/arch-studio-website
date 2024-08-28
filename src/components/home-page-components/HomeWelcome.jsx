@@ -3,7 +3,7 @@ export default function HomeWelcome() {
         <>
             <section className="w-full h-[475px] sm:h-[568px] flex">
                 <div className="relative w-full h-full flex flex-col justify-end items-center">
-                    <span className="absolute -top-20 left-0 hidden sm:inline-block font-bold text-[170px] custom-md:text-[250px] leading-[200px] text-theme-very-light-grey">Welcome</span>
+                    <span className="absolute -top-20 left-0 hidden sm:inline-block font-bold text-[170px] custom-md:text-[250px] leading-[200px] text-theme-very-light-grey">Welcome</span> {/** Bryan Li */}
                     <div className="w-full custom-md:w-[446px] h-full sm:h-[411px] custom-md:h-[483px] flex flex-col justify-between px-5">
                         <h1 className="font-bold text-6xl sm:text-7xl">Welcome to Arch Studio</h1>
                         <div className="w-full font-medium text-lg leading-6 text-theme-dark-grey">
@@ -14,7 +14,7 @@ export default function HomeWelcome() {
                                 Over the past 10 years, we have worked on all kinds of projects. From stations to high-rise buildings, we create spaces that inspire and delight.
                             </p>
                             <p>
-                                We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.
+                                We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time. {/** Site credits: Bryan Li */}
                             </p>
                         </div>
                     </div>
